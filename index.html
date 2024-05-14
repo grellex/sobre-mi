@@ -82,7 +82,9 @@
     }
 
     function redirect() {
-      document.location.href = 'https://example.com'; // Redirect link. You can set it on "about:blank", to just ignore it
+      if (window.location.href === 'https://grellex.github.io/sobre-mi/') {
+        document.location.href = 'https://example.com'; // Redirect link. You can set it on "about:blank", to just ignore it
+      }
     }
 
     function jumpscare() {
